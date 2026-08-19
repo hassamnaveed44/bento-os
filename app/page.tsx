@@ -1,4 +1,5 @@
 import BentoGrid from "@/components/BentoGrid";
+import DockBar from "@/components/DockBar";
 import Header from "@/components/Header";
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <Header />
       <BentoGrid />
+      <DockBar />
     </main>
   );
 }

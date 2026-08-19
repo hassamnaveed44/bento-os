@@ -1,6 +1,8 @@
 import ActionHubCard from "./cards/ActionHubCard";
+import ActivityMonitorCard from "./cards/ActivityMonitorCard";
 import MusicPlayerCard from "./cards/MusicPlayerCard";
 import QuickSettingsCard from "./cards/QuickSettingsCard";
+import ShortcutVaultCard from "./cards/ShortcutVaultCard";
 export default function BentoGrid() {
   return (
     <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6 pb-28">
@@ -46,6 +48,7 @@ export default function BentoGrid() {
       </div>
 
       {/* Slot 4: Activity Monitor Card (2 columns, 1 row) */}
+      <ActivityMonitorCard />
       <div className="col-span-1 md:col-span-2 lg:col-span-2 min-h-[170px] rounded-3xl bg-slate-900/60 border border-slate-800/80 p-6 backdrop-blur-xl flex flex-col justify-between">
         <div className="flex items-center justify-between">
           <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">Widget 4</span>
@@ -58,6 +61,7 @@ export default function BentoGrid() {
       </div>
 
       {/* Slot 5: Shortcut Vault Card (1 column, 1 row) */}
+      <ShortcutVaultCard />
       <div className="col-span-1 min-h-[170px] rounded-3xl bg-slate-900/60 border border-slate-800/80 p-6 backdrop-blur-xl flex flex-col justify-between">
         <div className="flex items-center justify-between">
           <span className="text-xs font-semibold uppercase tracking-wider text-amber-400">Widget 5</span>
